@@ -18,7 +18,54 @@
   </head>
   <body>
     <div class="article-page page-shell">
-      <div data-include="/partials/header.html"></div>
+      <header class="topbar">
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <a class="brand-logo" href="/" aria-label="Centrum Technologii Spółdzielczych">
+    <img src="/assets/brand/cth-logo.svg" alt="Centrum Technologii Spółdzielczych" />
+  </a>
+</header>
+
+<button type="button" class="menu-overlay" id="menu-overlay" aria-label="Zamknij menu" hidden></button>
+
+<aside id="mobile-menu" class="mobile-menu" aria-label="Menu nawigacyjne">
+  <div class="mobile-menu__content">
+    <div class="mobile-menu__header">
+      <button type="button" class="menu-close" id="menu-close" aria-label="Zamknij menu">×</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="/">Strona główna</a>
+      <a href="/o-hubie.html">O hubie</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Spółdzielnie energetyczne</a>
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/publikacje.html">Publikacje</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+    </nav>
+
+    <div class="social-links" aria-label="Social media">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</aside>
 
       <main>
         <section class="article-hero">
@@ -58,7 +105,60 @@
         </article>
       </main>
 
-      <div data-include="/partials/footer.html"></div>
+      <footer class="site-footer" id="kontakt">
+  <div class="footer-top">
+    <p class="footer-brand">CoopTech Hub</p>
+    <p class="footer-subtitle">Operatorem Centrum Technologii Spółdzielczych jest PLZ Spółdzielnia. Od 2021 r. integrujemy polski ruch spółdzielczy i budujemy lokalną odporność.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <nav class="footer-column">
+      <a href="/">Strona główna</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Energia</a>
+    </nav>
+
+    <nav class="footer-column">
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="footer-column footer-address">
+      <p>PLZ Spółdzielnia</p>
+      <p>info@hub.coop</p>
+      <p>ul. Grażyny 13</p>
+      <p>02-548 Warszawa</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="energy-fab" id="energy-fab">
+  <button type="button" class="energy-fab-close" id="energy-fab-close" aria-label="Zamknij">×</button>
+  <a class="energy-fab-link" href="https://energia.hub.coop" target="_blank" rel="noopener noreferrer">
+    <span class="energy-fab-bubble">Społeczność energetyczna w Twoim mieście</span>
+    <span class="energy-fab-button">
+      <img class="energy-fab-icon" src="/assets/spolecznosc-energetyczna-w-twoim-miescie.svg" alt="" aria-hidden="true" />
+    </span>
+  </a>
+</div>
     </div>
 
     <script type="module" src="/js/pages/detail.js"></script>

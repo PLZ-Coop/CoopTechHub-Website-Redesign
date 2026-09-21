@@ -19,7 +19,54 @@
   </head>
   <body>
     <div class="projects-page page-shell">
-      <div data-include="/partials/header.html"></div>
+      <header class="topbar">
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <a class="brand-logo" href="/" aria-label="Centrum Technologii Spółdzielczych">
+    <img src="/assets/brand/cth-logo.svg" alt="Centrum Technologii Spółdzielczych" />
+  </a>
+</header>
+
+<button type="button" class="menu-overlay" id="menu-overlay" aria-label="Zamknij menu" hidden></button>
+
+<aside id="mobile-menu" class="mobile-menu" aria-label="Menu nawigacyjne">
+  <div class="mobile-menu__content">
+    <div class="mobile-menu__header">
+      <button type="button" class="menu-close" id="menu-close" aria-label="Zamknij menu">×</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="/">Strona główna</a>
+      <a href="/o-hubie.html">O hubie</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Spółdzielnie energetyczne</a>
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/publikacje.html">Publikacje</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+    </nav>
+
+    <div class="social-links" aria-label="Social media">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</aside>
 
       <main>
         <section class="projects-page-hero">
@@ -31,14 +78,282 @@
 
         <section class="projects-page-list-section">
           <div class="projects-page-wrapper">
-            <div class="projects-page-filters" role="tablist" aria-label="Filtry projektów" id="projects-page-filters"></div>
+            <div class="projects-page-filters" role="tablist" aria-label="Filtry projektów" id="projects-page-filters">
 
-            <div class="projects-page-grid" id="projects-page-grid"></div>
+        <button
+          type="button"
+          class="projects-page-filter is-wszystkie is-active"
+          data-filter="wszystkie"
+          role="tab"
+          aria-selected="true"
+        >
+          Wszystkie
+        </button>
+      
+        <button
+          type="button"
+          class="projects-page-filter is-cyfryzacja "
+          data-filter="cyfryzacja"
+          role="tab"
+          aria-selected="false"
+        >
+          Cyfryzacja
+        </button>
+      
+        <button
+          type="button"
+          class="projects-page-filter is-energetyka "
+          data-filter="energetyka"
+          role="tab"
+          aria-selected="false"
+        >
+          Energetyka
+        </button>
+      
+        <button
+          type="button"
+          class="projects-page-filter is-rozwoj-lokalny "
+          data-filter="rozwoj-lokalny"
+          role="tab"
+          aria-selected="false"
+        >
+          Rozwój lokalny
+        </button>
+      
+</div>
+
+            <div class="projects-page-grid" id="projects-page-grid">
+
+    <a
+      class="projects-page-card is-rozwoj-lokalny"
+      href="/nasze-projekty/regenerator-miast.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/regenerator-miast.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Rozwój lokalny</p>
+        <h3>Regenerator Miast</h3>
+        <p class="projects-page-card-description">Dotychczasowy model rozwoju polskich miast się wyczerpał. Pieniądze z zewnątrz – unijne dotacje, zagraniczny kapitał, tania praca – już nie wystarczą. Potrzebny jest model, który zatrzymuje kapitał w lokalnym obiegu i sprawia, że mieszkańcy stają się współwłaścicielami, a nie tylko odbiorcami usług. Regenerator Miast wspiera przedstawicieli samorządów miast z całej Polski w wypracowaniu modelu rozwojowego, wdrażającego rozwiązania Lokalnych Spółdzielni Rozwojowych.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-rozwoj-lokalny"
+      href="/nasze-projekty/jadalne-miasto.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/jadalne-miasto.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Rozwój lokalny</p>
+        <h3>Jadalne Miasto</h3>
+        <p class="projects-page-card-description">Projekt proponuje zmianę sposobu, w jaki myślimy o mieście jako środowisku życia: nie tylko jako miejscu konsumpcji, ale jako aktywnym producencie pożywienia. Idea ta wykracza daleko poza tradycyjne pojęcie ogródka działkowego czy dekoracyjnej zieleni. Chodzi o głęboką integrację uprawy, przetwórstwa i dystrybucji żywności z tkanką miejską – z podwórzami, dachami, parkami, korytarzami ekologicznymi, wspólnymi kuchniami i lokalnymi targowiskami.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-cyfryzacja"
+      href="/nasze-projekty/zwiazkowa-rewolucja.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/zwiazkowa-rewolucja.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Cyfryzacja</p>
+        <h3>Związkowa Rewolucja – Od Papieru do Cyfryzacji</h3>
+        <p class="projects-page-card-description">Celem projektu jest wsparcie organizacji związkowych w odpowiedzi na wyzwania transformacji cyfrowej rynku pracy. W ramach trzech modułów powstaną rekomendacje systemowe dotyczące cyfryzacji w ruchu związkowym, zostanie opracowany i wdrożony „Asystent Związkowca AI” – narzędzie wspierające codzienną pracę struktur związkowych, a także przeprowadzonych zostanie 8 dwudniowych szkoleń stacjonarnych dla 160 działaczek i działaczy z całej Polski.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-energetyka"
+      href="/nasze-projekty/life-comet.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/life-comet.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Energetyka</p>
+        <h3>LIFE Comet</h3>
+        <p class="projects-page-card-description">Drogą do sprawiedliwej transformacji energetycznej – a więc do czystej, bezpiecznej i zdecentralizowanej energetyki – są społeczności energetyczne. LIFE Comet wspiera tworzenie koalicji energetycznych na poziomie krajowym w krajach Europy Środkowo-Wschodniej. Pomagamy zakładać nowe społeczności energetyczne poprzez szkolenia i pomoc techniczną. Konsorcjum projektu LIFE Comet tworzą spółdzielnie energetyczne i organizacje z ośmiu krajów UE. Naszym celem jest stworzenie siedmiu koalicji i wsparcie 97 nowych obywatelskich inicjatyw energetycznych. Projekt współfinansowany przez Unię Europejską.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-cyfryzacja"
+      href="/nasze-projekty/cyfrowa-transformacja-opzz.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/opzz.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Cyfryzacja</p>
+        <h3>Cyfrowa transformacja OPZZ</h3>
+        <p class="projects-page-card-description">Zbudowaliśmy i wdrożyliśmy narzędzia cyfrowe dla Ogólnopolskiego Porozumienia Związków Zawodowych (OPZZ). Z porad chatbota Nadzieja na platformie www.pracujgodnie.pl skorzystało już ponad pół miliona użytkowników, a 30 ogólnopolskich związków zawodowych korzysta z aplikacji PLZ do usprawnienia codziennej pracy.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-rozwoj-lokalny"
+      href="/nasze-projekty/akademia-miejskiej-odpornosci-gzm.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/akademia-gzm.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Rozwój lokalny</p>
+        <h3>Akademia Miejskiej Odporności dla GZM</h3>
+        <p class="projects-page-card-description">Przeprowadziliśmy Akademię Miejskiej Odporności dla Górnośląsko-Zagłębiowskiej Metropolii, czyli serię warsztatów na temat rozwoju lokalnego w duchu miejskiej odporności w mniejszych miastach. Efektem warsztatów jest Podręcznik Dobrych Praktyk, który niebawem opublikujemy. W Podręczniku zarekomendowaliśmy projekty spółdzielni rozwojowych spersonalizowane do potrzeb każdej z gmin biorących udział w Akademii.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-energetyka"
+      href="/nasze-projekty/spoldzielnia-otwarty-jazdow.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/otwarty-jazdow.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Energetyka</p>
+        <h3>Spółdzielnia Otwarty Jazdów</h3>
+        <p class="projects-page-card-description">W 2023 roku założyliśmy, wraz z siedmioma innymi partnerami, pierwszą miejską spółdzielnię energetyczną - Spółdzielnię Otwarty Jazdów. Nasz model miejskiej spółdzielni energetycznej to nowa jakość obywatelskich społeczności energetycznych.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-rozwoj-lokalny"
+      href="/nasze-projekty/most-spoldzielcza-farma-miejska.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/most-farma.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Rozwój lokalny</p>
+        <h3>MOST Spółdzielcza farma miejska</h3>
+        <p class="projects-page-card-description">Powołaliśmy Spółdzielnię MOST, która poprowadzi 3,6 ha farmę miejską w Warszawie. Będzie to pierwszy w Polsce ogólnodostępny park, łączący funkcje uprawy, edukacji i innowacji żywnościowej, prowadzony przez przedsiębiorstwo społeczne.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+    <a
+      class="projects-page-card is-energetyka"
+      href="/nasze-projekty/spoldzielczosc-energetyczna-ziemi-klodzkiej.html"
+      
+    >
+      <div class="projects-page-card-image">
+        <img src="/assets/projects/spoldzielczosc-klodzka.jpg" alt="" aria-hidden="true" />
+      </div>
+
+      <div class="projects-page-card-body">
+        <p class="projects-page-card-tag">Energetyka</p>
+        <h3>Spółdzielczość energetyczna ziemi kłodzkiej</h3>
+        <p class="projects-page-card-description">Spółdzielczość energetyczna dynamicznie rozwija się na ziemi kłodzkiej. Tamtejsi mieszkańcy zdecydowali się wziąć aktywny udział w transformacji energetycznej. CoopTech Hub, jako pionierski inkubator społeczności energetycznych w Polsce, odegrał rolę w promowaniu i wspieraniu rozwoju nowych spółdzielni energetycznych na obszarze Ziemi Kłodzkiej na etapie koncepcyjnym.</p>
+        <span class="projects-page-card-link">
+          więcej <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </a>
+  
+</div>
           </div>
         </section>
       </main>
 
-      <div data-include="/partials/footer.html"></div>
+      <footer class="site-footer" id="kontakt">
+  <div class="footer-top">
+    <p class="footer-brand">CoopTech Hub</p>
+    <p class="footer-subtitle">Operatorem Centrum Technologii Spółdzielczych jest PLZ Spółdzielnia. Od 2021 r. integrujemy polski ruch spółdzielczy i budujemy lokalną odporność.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <nav class="footer-column">
+      <a href="/">Strona główna</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Energia</a>
+    </nav>
+
+    <nav class="footer-column">
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="footer-column footer-address">
+      <p>PLZ Spółdzielnia</p>
+      <p>info@hub.coop</p>
+      <p>ul. Grażyny 13</p>
+      <p>02-548 Warszawa</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="energy-fab" id="energy-fab">
+  <button type="button" class="energy-fab-close" id="energy-fab-close" aria-label="Zamknij">×</button>
+  <a class="energy-fab-link" href="https://energia.hub.coop" target="_blank" rel="noopener noreferrer">
+    <span class="energy-fab-bubble">Społeczność energetyczna w Twoim mieście</span>
+    <span class="energy-fab-button">
+      <img class="energy-fab-icon" src="/assets/spolecznosc-energetyczna-w-twoim-miescie.svg" alt="" aria-hidden="true" />
+    </span>
+  </a>
+</div>
     </div>
 
     <script type="module" src="/js/pages/projects.js"></script>

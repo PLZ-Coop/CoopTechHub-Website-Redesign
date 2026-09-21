@@ -18,7 +18,54 @@
   </head>
   <body>
     <div class="page-shell">
-      <div data-include="/partials/header.html"></div>
+      <header class="topbar">
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <a class="brand-logo" href="/" aria-label="Centrum Technologii Spółdzielczych">
+    <img src="/assets/brand/cth-logo.svg" alt="Centrum Technologii Spółdzielczych" />
+  </a>
+</header>
+
+<button type="button" class="menu-overlay" id="menu-overlay" aria-label="Zamknij menu" hidden></button>
+
+<aside id="mobile-menu" class="mobile-menu" aria-label="Menu nawigacyjne">
+  <div class="mobile-menu__content">
+    <div class="mobile-menu__header">
+      <button type="button" class="menu-close" id="menu-close" aria-label="Zamknij menu">×</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="/">Strona główna</a>
+      <a href="/o-hubie.html">O hubie</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Spółdzielnie energetyczne</a>
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/publikacje.html">Publikacje</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+    </nav>
+
+    <div class="social-links" aria-label="Social media">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</aside>
 
       <section class="hero-section" id="start">
         <div class="hero-visual segment-reveal segment-delay-1" aria-hidden="true">
@@ -85,10 +132,350 @@
           <a class="publications-link" href="/blog.html">wszystkie aktualności</a>
         </div>
 
-        <div class="news-grid segment-reveal segment-delay-4" id="news-grid"></div>
+        <div class="news-grid segment-reveal segment-delay-4" id="news-grid">
+
+        <a class="news-card" href="/aktualnosci/czy-swiat-potrzebuje-jeszcze-spoldzielczosci.html">
+          <h3>Czy świat potrzebuje jeszcze spółdzielczości?</h3>
+          <p class="news-description">Stojąc przed siedzibą Krajowej Rady Spółdzielczej zadajmy sobie pytanie: czy świat potrzebuje jeszcze spółdzielczości?</p>
+          <img class="news-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+        <a class="news-card" href="/aktualnosci/premiera-asystenta-zwiazkowca-ai-na-kongresie-regeneracja.html">
+          <h3>Premiera Asystenta Związkowca AI na kongresie Regeneracja</h3>
+          <p class="news-description">W ubiegły piątek na kongresie Regeneracja w Dąbrowie Górniczej wspólnie z Ogólnopolskim Porozumieniem Związków Zawodowych i Instytutem Spraw Publicznych pokazaliśmy światu pierwszą…</p>
+          <img class="news-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+        <a class="news-card" href="/aktualnosci/inzynier-platformy-devops.html">
+          <h3>Inżynier / Inżynierka Platformy i DevOps (Mid lub Senior, AI first)</h3>
+          <p class="news-description">Zachęcamy do aplikowania na stanowisko Inżynier/Inżynierka Platformy i DevOps (Mid lub Senior, AI first).</p>
+          <img class="news-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+        <a class="news-card" href="/aktualnosci/programista-programistka-full-stack.html">
+          <h3>Programista / Programistka Full Stack (Mid lub Senior, AI first)</h3>
+          <p class="news-description">Zachęcamy do aplikowania na stanowisko Programista/Programistka Full Stack (Mid lub Senior, AI first).</p>
+          <img class="news-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+        <a class="news-card" href="/aktualnosci/zapraszamy-do-zespolu-plz.html">
+          <h3>Zapraszamy do zespołu PLZ!</h3>
+          <p class="news-description">Jeżeli interesuje Cię spółdzielczość i wdrażanie rozwiązań cyfrowych oraz masz wysokie zdolności komunikacyjne, zachęcamy do aplikowania na stanowisko Opiekuna/Opiekunki klienta PL…</p>
+          <img class="news-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+        <a class="news-card" href="/aktualnosci/asystent-zwiazkowca-ai-zapisy-na-warsztaty.html">
+          <h3>Asystent Związkowca AI – Zapisy na warsztaty</h3>
+          <p class="news-description">Zapraszamy do udziału w warsztatach poświęconych testowaniu i rozwojowi Asystenta Związkowca AI – budowanego obecnie narzędzia mającego wspierać codzienną działalność związkową pop…</p>
+          <img class="news-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+</div>
       </section>
 
-      <section class="logos-section" aria-label="Partnerzy i marki" id="logos-section"></section>
+      <section class="logos-section" aria-label="Partnerzy i marki" id="logos-section">
+
+        <div class="logos-row">
+          <div class="logos-track" style="--duration: 18s">
+            
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/bos-bank.png" alt="bos-bank" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/fabryka-pelna-zycia.png" alt="fabryka-pelna-zycia" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/heinrich-boll.png" alt="heinrich-boll" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/konfederacja-pracy-mlodych.png" alt="konfederacja-pracy-mlodych" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/opzz.png" alt="opzz" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/polska-siec-ekonomii.png" alt="polska-siec-ekonomii" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/rescoop.png" alt="rescoop" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/z-go.png" alt="z-go" />
+                          </div>
+                        
+                  </div>
+                
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/bos-bank.png" alt="bos-bank" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/fabryka-pelna-zycia.png" alt="fabryka-pelna-zycia" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/heinrich-boll.png" alt="heinrich-boll" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/konfederacja-pracy-mlodych.png" alt="konfederacja-pracy-mlodych" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/opzz.png" alt="opzz" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/polska-siec-ekonomii.png" alt="polska-siec-ekonomii" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/rescoop.png" alt="rescoop" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/z-go.png" alt="z-go" />
+                          </div>
+                        
+                  </div>
+                
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/bos-bank.png" alt="bos-bank" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/fabryka-pelna-zycia.png" alt="fabryka-pelna-zycia" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/heinrich-boll.png" alt="heinrich-boll" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/konfederacja-pracy-mlodych.png" alt="konfederacja-pracy-mlodych" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/opzz.png" alt="opzz" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/polska-siec-ekonomii.png" alt="polska-siec-ekonomii" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/rescoop.png" alt="rescoop" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/z-go.png" alt="z-go" />
+                          </div>
+                        
+                  </div>
+                
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/bos-bank.png" alt="bos-bank" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/fabryka-pelna-zycia.png" alt="fabryka-pelna-zycia" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/heinrich-boll.png" alt="heinrich-boll" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/konfederacja-pracy-mlodych.png" alt="konfederacja-pracy-mlodych" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/opzz.png" alt="opzz" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/polska-siec-ekonomii.png" alt="polska-siec-ekonomii" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/rescoop.png" alt="rescoop" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/z-go.png" alt="z-go" />
+                          </div>
+                        
+                  </div>
+                
+          </div>
+        </div>
+      
+        <div class="logos-row">
+          <div class="logos-track" style="--duration: 21s">
+            
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/collegium-civitas.png" alt="collegium-civitas" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/gzm.png" alt="gzm" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/koalicja.png" alt="koalicja" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/life.png" alt="life" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/otwarty-jazdow.png" alt="otwarty-jazdow" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/ramboll-fonden.png" alt="ramboll-fonden" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/tak-ladnie.png" alt="tak-ladnie" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/zarzad-zieleni-miejskiej.png" alt="zarzad-zieleni-miejskiej" />
+                          </div>
+                        
+                  </div>
+                
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/collegium-civitas.png" alt="collegium-civitas" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/gzm.png" alt="gzm" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/koalicja.png" alt="koalicja" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/life.png" alt="life" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/otwarty-jazdow.png" alt="otwarty-jazdow" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/ramboll-fonden.png" alt="ramboll-fonden" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/tak-ladnie.png" alt="tak-ladnie" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/zarzad-zieleni-miejskiej.png" alt="zarzad-zieleni-miejskiej" />
+                          </div>
+                        
+                  </div>
+                
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/collegium-civitas.png" alt="collegium-civitas" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/gzm.png" alt="gzm" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/koalicja.png" alt="koalicja" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/life.png" alt="life" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/otwarty-jazdow.png" alt="otwarty-jazdow" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/ramboll-fonden.png" alt="ramboll-fonden" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/tak-ladnie.png" alt="tak-ladnie" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/zarzad-zieleni-miejskiej.png" alt="zarzad-zieleni-miejskiej" />
+                          </div>
+                        
+                  </div>
+                
+                  <div class="logos-group">
+                    
+                          <div class="logo-pill">
+                            <img src="/assets/logo/collegium-civitas.png" alt="collegium-civitas" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/gzm.png" alt="gzm" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/koalicja.png" alt="koalicja" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/life.png" alt="life" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/otwarty-jazdow.png" alt="otwarty-jazdow" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/ramboll-fonden.png" alt="ramboll-fonden" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/tak-ladnie.png" alt="tak-ladnie" />
+                          </div>
+                        
+                          <div class="logo-pill">
+                            <img src="/assets/logo/zarzad-zieleni-miejskiej.png" alt="zarzad-zieleni-miejskiej" />
+                          </div>
+                        
+                  </div>
+                
+          </div>
+        </div>
+      
+</section>
 
       <section class="publications-section" id="publikacje">
         <div class="publications-header">
@@ -104,7 +491,81 @@
           </button>
 
           <div class="carousel-window">
-            <div class="publications-track" id="publications-track"></div>
+            <div class="publications-track" id="publications-track">
+
+        <a class="publication-slide is-rozwoj-lokalny" href="/publikacje/rolnictwo-jako-praca-przyszlosci-ai.html">
+          <div class="publication-visual is-rozwoj-lokalny">
+            <div class="publication-image-stack">
+              <img src="/assets/covers/praca-ktorej-nie-zabierze-ci-ai.jpg" alt="Miniatura publikacji: Praca, której nie zabierze Ci AI. O rolnictwie i naszej przyszłości" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="publication-content">
+            <div class="publication-body">
+              <p class="publication-authors">Joanna Erbel, Olga Turno · 17.06.2026</p>
+              <h3>Praca, której nie zabierze Ci AI. O rolnictwie i naszej przyszłości</h3>
+              <p class="publication-copy">Raport pokazuje rolnictwo jako pracę przyszłości w czasach sztucznej inteligencji, opisując, dlaczego zawody związane z ziemią i uprawą pozostają odporne na automatyzację, i jak samorządy mogą wspierać sukcesorów oraz neoruralsów przejmujących gospodarstwa.</p>
+            </div>
+
+            <div class="publication-footer">
+              <img class="publication-divider" src="https://www.figma.com/api/mcp/asset/8780fb60-1fa5-4e31-aa21-97cdb018e594" alt="" aria-hidden="true" />
+              <span class="publication-link-row">
+                <span>czytaj więcej</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      
+        <a class="publication-slide is-rozwoj-lokalny" href="/publikacje/miasta-dla-suwerennosci-zywnosciowej.html">
+          <div class="publication-visual is-rozwoj-lokalny">
+            <div class="publication-image-stack">
+              <img src="/assets/covers/miasta-dla-suwerennosci.png" alt="Miniatura publikacji: Miasta dla suwerenności żywnościowej" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="publication-content">
+            <div class="publication-body">
+              <p class="publication-authors">Joanna Erbel, Anna Jakubowska, Alicja Wójcik · 04.06.2025</p>
+              <h3>Miasta dla suwerenności żywnościowej</h3>
+              <p class="publication-copy">Lokalne polityki żywnościowe to dziś nie tylko element strategii rozwoju, ale konkretne narzędzie wzmacniania społecznej odporności. Raport pokazuje, jakie działania mogą podejmować samorządy, by wspierać polskie rolnictwo, na przykładach z Krakowa, Rybnika, Rzeszowa, Tarnowa, Wrocławia i Warszawy.</p>
+            </div>
+
+            <div class="publication-footer">
+              <img class="publication-divider" src="https://www.figma.com/api/mcp/asset/8780fb60-1fa5-4e31-aa21-97cdb018e594" alt="" aria-hidden="true" />
+              <span class="publication-link-row">
+                <span>czytaj więcej</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      
+        <a class="publication-slide is-energetyka" href="/publikacje/jak-powstaja-koalicje-spolecznosci-energetycznych-studium-przypadku-zwiazku-serc.html">
+          <div class="publication-visual is-energetyka">
+            <div class="publication-image-stack">
+              <img src="/assets/covers/zwiazek-serc.png" alt="Miniatura publikacji: Jak powstają Koalicje Społeczności Energetycznych? Studium przypadku Związku SERC" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="publication-content">
+            <div class="publication-body">
+              <p class="publication-authors">Bartłomiej Kupiec · 25.10.2024</p>
+              <h3>Jak powstają Koalicje Społeczności Energetycznych? Studium przypadku Związku SERC</h3>
+              <p class="publication-copy">Sprawiedliwa transformacja energetyczna nie uda się bez spółdzielni energetycznych. Studium przypadku Związku SERC pokazuje, jak scentralizowane wsparcie prawne, doradcze i kontrolne wzmacnia lokalne inicjatywy energetyczne i ich pozycję wobec instytucji rządowych.</p>
+            </div>
+
+            <div class="publication-footer">
+              <img class="publication-divider" src="https://www.figma.com/api/mcp/asset/8780fb60-1fa5-4e31-aa21-97cdb018e594" alt="" aria-hidden="true" />
+              <span class="publication-link-row">
+                <span>czytaj więcej</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </div>
+        </a>
+      
+</div>
           </div>
 
           <button type="button" class="carousel-arrow" data-direction="next" aria-label="Następna publikacja">
@@ -112,7 +573,23 @@
           </button>
         </div>
 
-        <div class="publications-highlights segment-reveal segment-delay-6" id="publications-highlights"></div>
+        <div class="publications-highlights segment-reveal segment-delay-6" id="publications-highlights">
+
+        <a class="publication-highlight-card" href="/publikacje/hybrydowe-targowiska.html">
+          <p class="publication-highlight-category">Rozwój lokalny</p>
+          <h3>Hybrydowe targowiska jako centra życia lokalnego</h3>
+          <p class="publication-highlight-description">Zastanawiamy się, jak przekształcać targowiska w miejsca aktywne społecznie i ekonomicznie przez cały tydzień, zamiast wyboru między upadkiem a gentryfikacją — tak, by mogły stać się centrami kultury i sąsiedzkich spotkań.</p>
+          <img class="publication-highlight-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+        <a class="publication-highlight-card" href="/publikacje/miejska-energetyka-obywatelska.html">
+          <p class="publication-highlight-category">Energetyka</p>
+          <h3>Miejska energetyka obywatelska</h3>
+          <p class="publication-highlight-description">Przedstawiamy modele społeczności energetycznych dla obszarów miejskich oraz praktyczne ścieżki wdrożenia OZE, na przykładzie warszawskiego osiedla Jazdów, wraz z analizą prosumentów zbiorowych, klastrów energii i spółdzielni.</p>
+          <img class="publication-highlight-arrow" src="/assets/arrow_right_bottom.svg" alt="" aria-hidden="true" />
+        </a>
+      
+</div>
       </section>
 
       <section class="plz-section" id="plz">
@@ -165,7 +642,60 @@
         </div>
       </section>
 
-      <div data-include="/partials/footer.html"></div>
+      <footer class="site-footer" id="kontakt">
+  <div class="footer-top">
+    <p class="footer-brand">CoopTech Hub</p>
+    <p class="footer-subtitle">Operatorem Centrum Technologii Spółdzielczych jest PLZ Spółdzielnia. Od 2021 r. integrujemy polski ruch spółdzielczy i budujemy lokalną odporność.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <nav class="footer-column">
+      <a href="/">Strona główna</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Energia</a>
+    </nav>
+
+    <nav class="footer-column">
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="footer-column footer-address">
+      <p>PLZ Spółdzielnia</p>
+      <p>info@hub.coop</p>
+      <p>ul. Grażyny 13</p>
+      <p>02-548 Warszawa</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="energy-fab" id="energy-fab">
+  <button type="button" class="energy-fab-close" id="energy-fab-close" aria-label="Zamknij">×</button>
+  <a class="energy-fab-link" href="https://energia.hub.coop" target="_blank" rel="noopener noreferrer">
+    <span class="energy-fab-bubble">Społeczność energetyczna w Twoim mieście</span>
+    <span class="energy-fab-button">
+      <img class="energy-fab-icon" src="/assets/spolecznosc-energetyczna-w-twoim-miescie.svg" alt="" aria-hidden="true" />
+    </span>
+  </a>
+</div>
     </div>
 
     <script type="module" src="/js/pages/home.js"></script>
