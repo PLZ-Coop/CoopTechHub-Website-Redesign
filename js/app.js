@@ -1,14 +1,3 @@
-async function includePartials() {
-  const targets = document.querySelectorAll('[data-include]');
-  await Promise.all(
-    Array.from(targets).map(async (el) => {
-      const src = el.getAttribute('data-include');
-      const response = await fetch(src);
-      el.innerHTML = await response.text();
-    }),
-  );
-}
-
 function syncTopbarHeightVar() {
   const topbar = document.querySelector('.topbar');
 
@@ -177,8 +166,6 @@ export function initPublicationsCarousel(root) {
 }
 
 export async function initShell({ topbarClass } = {}) {
-  await includePartials();
-
   if (topbarClass) {
     document.querySelector('.topbar')?.classList.add(topbarClass);
   }

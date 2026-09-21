@@ -1,62 +1,13 @@
 import { initShell } from '../app.js';
-import { publications, publicationTagLabels } from '../data/publications.js';
-
-const PAGE_SIZE = 6;
-
-const filterItems = [
-  { key: 'wszystkie', label: 'Wszystkie' },
-  { key: 'cyfryzacja', label: publicationTagLabels.cyfryzacja },
-  { key: 'energetyka', label: publicationTagLabels.energetyka },
-  { key: 'rozwoj-lokalny', label: publicationTagLabels['rozwoj-lokalny'] },
-];
+import { PAGE_SIZE, filtersHtml, gridHtml, getFilteredPublications } from '../render/publications.js';
 
 let activeFilter = 'wszystkie';
 let visibleCount = PAGE_SIZE;
 let observer = null;
 
-function getFilteredPublications() {
-  if (activeFilter === 'wszystkie') {
-    return publications;
-  }
-
-  return publications.filter((publication) => publication.tag === activeFilter);
-}
-
-function renderPublicationCard(publication) {
-  return `
-    <a class="publications-page-card is-${publication.tag}" href="/publikacje/${publication.id}.html">
-      <div class="publications-page-card__body">
-        <p class="publications-page-card__title">📄 ${publication.title}</p>
-        <p class="publications-page-card__meta">
-          ${publication.authors.join(', ')} · ${publication.date}
-        </p>
-        <p class="publications-page-card__description">${publication.description}</p>
-        <p class="publications-page-card__tag">${publicationTagLabels[publication.tag]}</p>
-      </div>
-      <span class="publications-page-card__action" aria-hidden="true">→</span>
-    </a>
-  `;
-}
-
 function renderFilters() {
   const container = document.getElementById('publications-page-filters');
-  container.innerHTML = filterItems
-    .map((item) => {
-      const isActive = activeFilter === item.key;
-
-      return `
-        <button
-          type="button"
-          class="publications-page-filter is-${item.key} ${isActive ? 'is-active' : ''}"
-          data-filter="${item.key}"
-          role="tab"
-          aria-selected="${isActive}"
-        >
-          ${item.label}
-        </button>
-      `;
-    })
-    .join('');
+  container.innerHTML = filtersHtml(activeFilter);
 
   container.querySelectorAll('.publications-page-filter').forEach((button) => {
     button.addEventListener('click', () => {
@@ -75,12 +26,11 @@ function renderFilters() {
 }
 
 function renderGrid() {
-  const filtered = getFilteredPublications();
-  const visible = filtered.slice(0, visibleCount);
+  const filtered = getFilteredPublications(activeFilter);
   const hasMore = visibleCount < filtered.length;
 
   const grid = document.getElementById('publications-page-grid');
-  grid.innerHTML = visible.map(renderPublicationCard).join('');
+  grid.innerHTML = gridHtml(activeFilter, visibleCount);
 
   const sentinel = document.getElementById('publications-page-load-more');
 

@@ -19,7 +19,54 @@
   </head>
   <body>
     <div class="team-page page-shell">
-      <div data-include="/partials/header.html"></div>
+      <header class="topbar">
+  <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <a class="brand-logo" href="/" aria-label="Centrum Technologii Spółdzielczych">
+    <img src="/assets/brand/cth-logo.svg" alt="Centrum Technologii Spółdzielczych" />
+  </a>
+</header>
+
+<button type="button" class="menu-overlay" id="menu-overlay" aria-label="Zamknij menu" hidden></button>
+
+<aside id="mobile-menu" class="mobile-menu" aria-label="Menu nawigacyjne">
+  <div class="mobile-menu__content">
+    <div class="mobile-menu__header">
+      <button type="button" class="menu-close" id="menu-close" aria-label="Zamknij menu">×</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="/">Strona główna</a>
+      <a href="/o-hubie.html">O hubie</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Spółdzielnie energetyczne</a>
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/publikacje.html">Publikacje</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+    </nav>
+
+    <div class="social-links" aria-label="Social media">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" class="social-link" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</aside>
 
       <main>
         <section class="team-hero-section" id="start">
@@ -37,7 +84,127 @@
         </section>
 
         <section class="team-members-section">
-          <div class="team-grid segment-reveal segment-delay-2" id="team-grid"></div>
+          <div class="team-grid segment-reveal segment-delay-2" id="team-grid">
+
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/jan_oleszczuk_zygmuntowski.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Jan Oleszczuk-Zygmuntowski</h3>
+          <p class="">Ekonomista, spółdzielca, doktor nauk o zarządzaniu i jakości specjalizujący się w dziedzinie gospodarki cyfrowej i zarządzania danymi. Prezes Zarządu PLZ Spółdzielni, operatora centrum technologii spółdzielczych CoopTech Hub, oraz współprzewodniczący Polskiej Sieci Ekonomii. Wykładowca Akademii Leona Koźmińskiego na kierunku Zarządzanie i AI. Założyciel i w latach 2015-2020 prezes zarządu Fundacji Instrat, progresywnego think-tanku. Doświadczenie zdobywał m.in. w Polskim Funduszu Rozwoju. Absolwent Szkoły Głównej Handlowej w Warszawie. Autor „Kapitalizmu Sieci”, książki nominowanej do nagrody Economicus 2020.</p>
+          
+            <div class="team-card-socials">
+              
+                <a href="https://www.linkedin.com/in/jan-j-zygmuntowski/" target="_blank" rel="nofollow noopener" aria-label="Jan Oleszczuk-Zygmuntowski - linkedin">
+                  <img src="https://www.figma.com/api/mcp/asset/de705ff9-4957-43be-b521-b73d1ec65f94" alt="" aria-hidden="true" />
+                </a>
+              
+            </div>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/joanna_erbel.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Joanna Erbel</h3>
+          <p class="">Doktora socjologii, ekspertka do spraw mieszkaniowych i budowania miejskiej odporności. Członkini Zarządu PLZ Spółdzielni. Dyrektorka ds. protopii w CoopTech Hub, pierwszym w Polsce centrum technologii spółdzielczych. Członkini Rady Fundacji Rynku Najmu. Współautorka raportów CTH – Spółdzielnia Równokręgi, czyli ekonomia troski w działaniu (2023), Spółdzielczy Plan Odbudowy (2021) oraz Spółdzielcza transformacja oraz Pakiet miejskiej odporności (2022). Autorka książek: „Poza własnością. W stronę udanej polityki mieszkaniowej” (2020), „Wychylone w przyszłość. Jak zmienić świat na lepsze” (2022) oraz powieści foresightowej „Jak Henryk zdobył władzę” (2023). Współpracowniczka Fundacji A/typowi, działającej na rzecz neuroróżnorodności. Rolniczka.</p>
+          
+            <div class="team-card-socials">
+              
+                <a href="https://www.linkedin.com/in/joanna-erbel-74870a164/" target="_blank" rel="nofollow noopener" aria-label="Joanna Erbel - linkedin">
+                  <img src="https://www.figma.com/api/mcp/asset/de705ff9-4957-43be-b521-b73d1ec65f94" alt="" aria-hidden="true" />
+                </a>
+              
+            </div>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/tomasz_janas.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Tomasz Janas</h3>
+          <p class="">Wizjoner i strateg, ekonomista, pasjonat problematyki social / shared value i ekonomii behawioralnej. Posiada wieloletnie doświadczenie na funkcjach kierowniczych w bankowości, samorządach i administracji centralnej. Przewodniczący Rady Nadzorczej Spółdzielni PLZ. Od 15 lat założyciel i prezes L612 SA (dawniej Leonardo SA), spółki zajmującej się venture building. Realizuje projekty technologiczne na kontynentach: europejskim, APAC oraz afrykańskim.</p>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/nadia_oleszczuk_zygmuntowska.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Nadia Oleszczuk-Zygmuntowska</h3>
+          <p class="">Działaczka na rzecz praw kobiet i praw pracowniczych. Liderka Rady Konsultacyjnej Strajku Kobiet. Przewodnicząca Konfederacji Pracy Młodych. Najmłodsza członkini Prezydium Rady OPZZ Województwa Mazowieckiego. Bohaterka kampanii Defend the Defenders. Znalazła się na liście 25under25 McKinsey & Company oraz Forbes w 2022 roku za swoją działalność społeczną. Zaangażowana w inicjatywę Unions Help Refugees, mającą na celu pomoc uchodźczyniom w odnalezieniu się na polskim rynku pracy. W CoopTech Hubie odpowiedzialna za cyfryzację związków zawodowych.</p>
+          
+            <div class="team-card-socials">
+              
+                <a href="https://www.facebook.com/nadia.oleszczuk" target="_blank" rel="nofollow noopener" aria-label="Nadia Oleszczuk-Zygmuntowska - facebook">
+                  <img src="https://www.figma.com/api/mcp/asset/12e3edcf-2c93-49e4-bcbf-5677dfd263e2" alt="" aria-hidden="true" />
+                </a>
+              
+                <a href="https://www.linkedin.com/in/nadia-oleszczuk-zygmuntowska-7839001b1/" target="_blank" rel="nofollow noopener" aria-label="Nadia Oleszczuk-Zygmuntowska - linkedin">
+                  <img src="https://www.figma.com/api/mcp/asset/de705ff9-4957-43be-b521-b73d1ec65f94" alt="" aria-hidden="true" />
+                </a>
+              
+            </div>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/joanna_gosiewska_giralt.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Joanna Gosiewska-Giralt</h3>
+          <p class="">Członkini Zarządu Spółki Z GO rozwijającej aplikację PLZ oraz członkini rady nadzorczej PLZ Spółdzielnia. Inwestorka, biznesmenka oraz działaczka społeczna, która potrafi integrować różne środowiska dla wspólnego celu. Posiada ponad piętnastoletnie doświadczenie pracy na stanowiskach zarządczych zarówno dla firm polskich jak i zagranicznych. Doświadczenie i wiedzę zdobytą w pracy dla korporacji, firm rodzinnych oraz NGOs wykorzystuje obecnie do budowania strategii biznesowych dla sektora spółdzielczego w zakresie transformacji cyfrowej. Założycielka i Prezeska Fundacji Program Pomocy Pierwsza Praca oraz pomysłodawczyni ogólnopolskiego projektu „Bank Ubrań”.</p>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/michał_pietrusiewicz.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Michał Pietrusiewicz</h3>
+          <p class="">Współtwórca ekosystemu PLZ. Architekt systemów i rozwiązań IT z 25-letnim doświadczeniem. Tworzył systemy cyfrowe (web i mobile) dla instytucji finansowych na całym świecie. Projektuje innowacyjne rozwiązania oraz wdraża transformację cyfrową w bankach oraz największych zakładach produkcyjnych w Europie.</p>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/magda_agata_domańska.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Magda Agata Domańska</h3>
+          <p class="team-card-bio-placeholder"></p>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/jakub_russak.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Jakub Russak</h3>
+          <p class="team-card-bio-placeholder"></p>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/mateusz_różański.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Mateusz Różański</h3>
+          <p class="team-card-bio-placeholder"></p>
+          
+        </article>
+      
+        <article class="team-card">
+          <div class="team-card-photo">
+            <img src="/assets/team_photos/rafał_prus.png" alt="" aria-hidden="true" />
+          </div>
+          <h3>Rafał Prus</h3>
+          <p class="team-card-bio-placeholder"></p>
+          
+        </article>
+      
+</div>
         </section>
 
         <section class="support-contact-section team-support-section segment-reveal segment-delay-3">
@@ -62,7 +229,60 @@
         </section>
       </main>
 
-      <div data-include="/partials/footer.html"></div>
+      <footer class="site-footer" id="kontakt">
+  <div class="footer-top">
+    <p class="footer-brand">CoopTech Hub</p>
+    <p class="footer-subtitle">Operatorem Centrum Technologii Spółdzielczych jest PLZ Spółdzielnia. Od 2021 r. integrujemy polski ruch spółdzielczy i budujemy lokalną odporność.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <nav class="footer-column">
+      <a href="/">Strona główna</a>
+      <a href="/blog.html">Aktualności</a>
+      <a href="/nasze-projekty.html">Nasze projekty</a>
+      <a href="/spoldzielnie-energetyczne.html">Energia</a>
+    </nav>
+
+    <nav class="footer-column">
+      <a href="/cyfryzacja.html">Technologie</a>
+      <a href="/rozwoj-lokalny.html">Rozwój lokalny</a>
+      <a href="/zespol.html">Zespół</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="footer-column footer-address">
+      <p>PLZ Spółdzielnia</p>
+      <p>info@hub.coop</p>
+      <p>ul. Grażyny 13</p>
+      <p>02-548 Warszawa</p>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/cooptechhub/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/facebook.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.youtube.com/@cooptechhub" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/youtube.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.linkedin.com/company/cooptechhub/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/linkedin.svg" alt="" aria-hidden="true" />
+      </a>
+      <a href="https://www.instagram.com/cooptechhub/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <img src="/assets/social/instagram.svg" alt="" aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="energy-fab" id="energy-fab">
+  <button type="button" class="energy-fab-close" id="energy-fab-close" aria-label="Zamknij">×</button>
+  <a class="energy-fab-link" href="https://energia.hub.coop" target="_blank" rel="noopener noreferrer">
+    <span class="energy-fab-bubble">Społeczność energetyczna w Twoim mieście</span>
+    <span class="energy-fab-button">
+      <img class="energy-fab-icon" src="/assets/spolecznosc-energetyczna-w-twoim-miescie.svg" alt="" aria-hidden="true" />
+    </span>
+  </a>
+</div>
     </div>
 
     <script type="module" src="/js/pages/team.js"></script>
