@@ -11,6 +11,20 @@ function parseDate(date) {
 
 const rawPublications = [
   {
+    id: 'urzecze-miejska-strefa-zywicielska',
+    title: 'Urzecze – miejska strefa żywicielska i zawody przyszłości',
+    description:
+      'Raport przedstawia Urzecze jako część warszawskiej strefy żywicielskiej, analizując na podstawie 37 wywiadów i sześciu warsztatów foresightowych presję urbanizacyjną na tereny rolne oraz proponując „25 zawodów przyszłości” wspierających regionalny system żywnościowy.',
+    authors: ['Joanna Erbel', 'Maciej Łepkowski'],
+    date: '30.09.2026',
+    tag: 'rozwoj-lokalny',
+    thumbnailUrl: '/assets/covers/urzecze-miejska-strefa-zywicielska.jpg',
+    attachment: {
+      label: 'Pobierz raport (PDF)',
+      url: '/assets/publications/urzecze-miejska-strefa-zywicielska.pdf',
+    },
+  },
+  {
     id: 'rolnictwo-jako-praca-przyszlosci-ai',
     title: 'Praca, której nie zabierze Ci AI. O rolnictwie i naszej przyszłości',
     description:

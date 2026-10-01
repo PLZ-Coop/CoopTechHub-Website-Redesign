@@ -1,0 +1,15 @@
+# CoopTech Hub
+
+> CoopTech Hub to pierwsze w Polsce centrum technologii spółdzielczych, prowadzone przez PLZ Spółdzielnię. Wspieramy spółdzielnie energetyczne, cyfryzację NGO i samorządów oraz rozwój lokalny, a także rozwijamy aplikację PLZ (Platforma Lokalnych Zasobów).
+
+## Kluczowe strony
+
+- [O hubie](https://hub.coop/o-hubie.html): misja, wartości i podejście CoopTech Hub
+- [Spółdzielnie energetyczne](https://hub.coop/spoldzielnie-energetyczne.html): wsparcie dla społeczności energetycznych i prosumentów
+- [Technologie](https://hub.coop/cyfryzacja.html): cyfryzacja NGO, samorządów i instytucji
+- [Rozwój lokalny](https://hub.coop/rozwoj-lokalny.html): spółdzielnie rozwojowe i lokalne systemy żywnościowe
+- [Nasze projekty](https://hub.coop/nasze-projekty.html): realizowane i zakończone projekty
+- [Publikacje](https://hub.coop/publikacje.html): raporty i analizy
+- [Aktualności](https://hub.coop/blog.html): bieżące wiadomości
+- [Zespół](https://hub.coop/zespol.html): osoby tworzące CoopTech Hub
+- Kontakt: info@hub.coop
