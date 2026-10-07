@@ -67,7 +67,15 @@ export function publicationTrackHtml() {
   return `
     <a class="publication-slide ${publication ? `is-${publication.tag}` : ''}" href="${publication ? `/publikacje/${publication.id}.html` : '#'}">
       <div class="publication-visual ${publication ? `is-${publication.tag}` : ''}">
-        <div class="publication-image-stack"></div>
+        <div class="publication-image-stack">
+          ${
+            publication?.thumbnailUrl
+              ? `<img src="${publication.thumbnailUrl}" alt="Miniatura publikacji: ${publication.title}" loading="lazy" />`
+              : publication
+                ? `<img class="publication-image-fallback" src="/assets/brand/cth-logo.svg" alt="" aria-hidden="true" />`
+                : ''
+          }
+        </div>
       </div>
 
       <div class="publication-content">
