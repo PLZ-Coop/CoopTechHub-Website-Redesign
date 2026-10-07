@@ -1,13 +1,12 @@
 import { initShell } from '../app.js';
-import { getFeaturedPublications, offerListHtml, publicationsTrackHtml } from '../render/local-development.js';
+import { getFeaturedPublications } from '../render/local-development.js';
 
 const featuredPublications = getFeaturedPublications();
 
 let activePublication = 0;
 
-function renderOfferList() {
+function bindOfferList() {
   const list = document.getElementById('local-offer-list');
-  list.innerHTML = offerListHtml();
 
   list.querySelectorAll('.subpage-offer-item').forEach((item) => {
     const trigger = item.querySelector('.subpage-offer-trigger');
@@ -19,10 +18,6 @@ function renderOfferList() {
       indicator.textContent = isOpen ? '−' : '+';
     });
   });
-}
-
-function renderPublicationsTrack() {
-  document.getElementById('local-publications-track').innerHTML = publicationsTrackHtml(featuredPublications);
 }
 
 function updateCarousel() {
@@ -40,7 +35,6 @@ function initCarousel() {
     return;
   }
 
-  renderPublicationsTrack();
   updateCarousel();
 
   const prevButton = document.getElementById('local-carousel-prev');
@@ -66,5 +60,5 @@ function initCarousel() {
 }
 
 await initShell({ topbarClass: 'energy-topbar' });
-renderOfferList();
+bindOfferList();
 initCarousel();

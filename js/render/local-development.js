@@ -6,32 +6,30 @@ export const localOfferItems = [
     title: 'Wspieramy miasta w procesach rewitalizacji i dekarbonizacji',
     description:
       'Pomagamy samorządom budować Lokalne Spółdzielnie Rozwojowe, które łączą różne środowiska i zatrzymują kapitał w lokalnym obiegu. Poprzez współpracę z samorządami i lokalną społecznością wspieramy sprawiedliwą transformację energetyczną i cyfrową.',
-    icon: '/assets/icons/local/offer1.png',
+    icon: '/assets/icons/local/offer1.webp',
   },
   {
     number: '02',
     title: 'Wspieramy powstawanie lokalnych przedsiębiorstw społecznych i spółdzielczych modeli biznesowych',
     description:
       'Inkubujemy spółdzielnie — od kooperatyw spożywczych i farm miejskich, po spółdzielnie projektantów i informatyków. Prowadzimy szkolenia w obszarze zarządzania przedsiębiorstwami ekonomii społecznej i spółdzielni.',
-    icon: '/assets/icons/local/offer2.png',
+    icon: '/assets/icons/local/offer2.webp',
   },
   {
     number: '03',
     title: 'Wdrażamy innowacyjne rozwiązania z zakresu ulepszania miejskiej infrastruktury, takiej jak targowiska',
     description:
       'Łączymy wiedzę urbanistyczną, socjologiczną i technologiczną, żeby ożywiać przestrzenie, które już istnieją. Wspieramy procesy wprowadzania innowacji społecznych w gminach poprzez między innymi warsztaty dla samorządowców, badania z zakresu odporności miejskiej i współpracy miast i wsi.',
-    icon: '/assets/icons/local/offer3.png',
+    icon: '/assets/icons/local/offer3.webp',
   },
   {
     number: '04',
     title: 'Specjalizujemy się w miejskim rolnictwie i budowaniu lokalnych systemów żywnościowych',
     description:
       'Wspieramy powstawanie spółdzielczych farm miejskich i ogrodów społecznościowych — od modelu ekonomicznego po budowanie społeczności oraz negocjacje z inwestorami, gminą i właścicielami ziemi.',
-    icon: '/assets/icons/local/offer4.png',
+    icon: '/assets/icons/local/offer4.webp',
   },
 ];
-
-const imgVector1 = 'https://www.figma.com/api/mcp/asset/8780fb60-1fa5-4e31-aa21-97cdb018e594';
 
 export function getFeaturedPublications() {
   return getPublicationsByTag('rozwoj-lokalny', 3);
@@ -82,7 +80,7 @@ export function publicationsTrackHtml(featuredPublications = getFeaturedPublicat
             </div>
 
             <div class="publication-footer">
-              <img class="publication-divider" src="${imgVector1}" alt="" aria-hidden="true" />
+              <hr class="publication-divider" aria-hidden="true" />
               <span class="publication-link-row">
                 <span>czytaj więcej</span>
                 <span aria-hidden="true">→</span>

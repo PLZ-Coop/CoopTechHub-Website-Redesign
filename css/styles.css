@@ -589,6 +589,7 @@ a {
 
 .logo-pill {
   flex: 0 0 auto;
+  width: 160px;
   height: 120px;
   padding: 0.5rem 0;
   background: transparent;
@@ -602,7 +603,8 @@ a {
 
 .logo-pill img {
   height: 100%;
-  width: auto;
+  width: 100%;
+  max-width: 100%;
   object-fit: contain;
   opacity: 1;
 }
@@ -906,7 +908,9 @@ a {
 .publication-divider {
   width: 100%;
   height: 1px;
-  object-fit: cover;
+  border: 0;
+  background-color: currentColor;
+  opacity: 0.15;
 }
 
 .publication-link-row {

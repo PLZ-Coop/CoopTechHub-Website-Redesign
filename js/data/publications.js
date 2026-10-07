@@ -18,7 +18,7 @@ const rawPublications = [
     authors: ['Joanna Erbel', 'Maciej Łepkowski'],
     date: '30.09.2026',
     tag: 'rozwoj-lokalny',
-    thumbnailUrl: '/assets/covers/urzecze-miejska-strefa-zywicielska.jpg',
+    thumbnailUrl: '/assets/covers/urzecze-miejska-strefa-zywicielska.webp',
     attachment: {
       label: 'Pobierz raport (PDF)',
       url: '/assets/publications/urzecze-miejska-strefa-zywicielska.pdf',
@@ -32,7 +32,7 @@ const rawPublications = [
     authors: ['Joanna Erbel', 'Olga Turno'],
     date: '17.06.2026',
     tag: 'rozwoj-lokalny',
-    thumbnailUrl: '/assets/covers/praca-ktorej-nie-zabierze-ci-ai.jpg',
+    thumbnailUrl: '/assets/covers/praca-ktorej-nie-zabierze-ci-ai.webp',
     attachment: {
       label: 'Pobierz raport (PDF)',
       url: '/assets/publications/rolnictwo-jako-praca-przyszlosci-ai.pdf',
@@ -46,7 +46,7 @@ const rawPublications = [
     authors: ['Joanna Erbel', 'Anna Jakubowska', 'Alicja Wójcik'],
     date: '04.06.2025',
     tag: 'rozwoj-lokalny',
-    thumbnailUrl: '/assets/covers/miasta-dla-suwerennosci.png',
+    thumbnailUrl: '/assets/covers/miasta-dla-suwerennosci.webp',
     attachment: {
       label: 'Pobierz raport (PDF)',
       url: '/assets/publications/miasta-dla-suwerennosci-zywnosciowej.pdf',
@@ -60,7 +60,7 @@ const rawPublications = [
     authors: ['Bartłomiej Kupiec'],
     date: '25.10.2024',
     tag: 'energetyka',
-    thumbnailUrl: '/assets/covers/zwiazek-serc.png',
+    thumbnailUrl: '/assets/covers/zwiazek-serc.webp',
     attachment: {
       label: 'Pobierz raport (PDF)',
       url: '/assets/publications/jak-powstaja-koalicje-spolecznosci-energetycznych-studium-przypadku-zwiazku-serc.pdf',
@@ -74,7 +74,7 @@ const rawPublications = [
     authors: ['Joanna Erbel', 'Ewa Illg-Latko', 'Maciej Łepkowski', 'Aleksandra Sobolewska', 'Alicja Wójcik'],
     date: '03.09.2024',
     tag: 'rozwoj-lokalny',
-    thumbnailUrl: '/assets/covers/hybrydowe-targowiska.png',
+    thumbnailUrl: '/assets/covers/hybrydowe-targowiska.webp',
     attachment: {
       label: 'Pobierz raport (PDF)',
       url: '/assets/publications/hybrydowe-targowiska.pdf',
@@ -88,7 +88,7 @@ const rawPublications = [
     authors: ['Bartłomiej Kupiec', 'Rafał Krenz', 'Wojciech Matejko', 'Julia Potrzebowska', 'Jan Oleszczuk-Zygmuntowski'],
     date: '03.04.2024',
     tag: 'energetyka',
-    thumbnailUrl: '/assets/covers/miejska-energetyka-obywatelska.png',
+    thumbnailUrl: '/assets/covers/miejska-energetyka-obywatelska.webp',
     attachment: {
       label: 'Pobierz raport (PDF)',
       url: '/assets/publications/miejska-energetyka-obywatelska.pdf',
@@ -141,7 +141,7 @@ const rawPublications = [
     authors: ['CoopTech Hub', 'Enercode', 'Urząd Miasta Krakowa'],
     date: '27.09.2023',
     tag: 'energetyka',
-    thumbnailUrl: '/assets/covers/krakowska-energetyka-obywatelska.png',
+    thumbnailUrl: '/assets/covers/krakowska-energetyka-obywatelska.webp',
     attachment: {
       label: 'Pobierz raport (PDF)',
       url: '/assets/publications/krakowska-energetyka-obywatelska.pdf',
