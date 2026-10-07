@@ -1,9 +1,7 @@
 import { initShell } from '../app.js';
-import { processListHtml, publicationTrackHtml } from '../render/energy.js';
 
-function renderProcessSteps() {
+function bindProcessSteps() {
   const list = document.getElementById('energy-process-list');
-  list.innerHTML = processListHtml();
 
   list.querySelectorAll('.subpage-offer-item').forEach((step) => {
     const trigger = step.querySelector('.subpage-offer-trigger');
@@ -17,10 +15,5 @@ function renderProcessSteps() {
   });
 }
 
-function renderPublication() {
-  document.getElementById('energy-publication-track').innerHTML = publicationTrackHtml();
-}
-
 await initShell({ topbarClass: 'energy-topbar' });
-renderProcessSteps();
-renderPublication();
+bindProcessSteps();

@@ -4,27 +4,27 @@ export const digitalOfferItems = [
     title: 'Rozwijamy PLZ — platformę do zarządzania lokalnymi społecznościami',
     description:
       'Wdrażamy Platformę PLZ: komunikacja z członkami, głosowania, wydarzenia, zadania i płatności w jednej, uporządkowanej przestrzeni, dopasowanej do Twojej organizacji.',
-    icon: '/assets/icons/digital/offer1.png',
+    icon: '/assets/icons/digital/offer1.webp',
   },
   {
     number: '02',
     title: 'Przeprowadzamy organizacje przez cyfrową transformację',
     description:
       'Diagnozujemy potrzeby, projektujemy rozwiązania wspólnie z użytkownikami i towarzyszymy przy wdrożeniu.',
-    icon: '/assets/icons/digital/offer2.png',
+    icon: '/assets/icons/digital/offer2.webp',
   },
   {
     number: '03',
     title: 'Projektujemy i wdrażamy rozwiązania oparte na sztucznej inteligencji',
     description:
       'Budujemy Asystentów AI od analizy potrzeb, przez dobór modelu i bazę wiedzy, po wdrożenie gotowego rozwiązania end-to-end.',
-    icon: '/assets/icons/digital/offer3.png',
+    icon: '/assets/icons/digital/offer3.webp',
   },
   {
     number: '04',
     title: 'Szkolimy liderów i działaczy w zakresie kompetencji cyfrowych',
     description: 'Prowadzimy stacjonarne szkolenia w całej Polsce oraz online.',
-    icon: '/assets/icons/digital/offer4.png',
+    icon: '/assets/icons/digital/offer4.webp',
   },
 ];
 

@@ -1,9 +1,7 @@
 import { initShell } from '../app.js';
-import { offerListHtml } from '../render/digitalization.js';
 
-function renderOfferItems() {
+function bindOfferItems() {
   const list = document.getElementById('digital-offer-list');
-  list.innerHTML = offerListHtml();
 
   list.querySelectorAll('.subpage-offer-item').forEach((item) => {
     const trigger = item.querySelector('.subpage-offer-trigger');
@@ -18,4 +16,4 @@ function renderOfferItems() {
 }
 
 await initShell({ topbarClass: 'energy-topbar' });
-renderOfferItems();
+bindOfferItems();

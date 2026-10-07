@@ -72,7 +72,7 @@ export function publicationsTrackHtml() {
             </div>
 
             <div class="publication-footer">
-              <img class="publication-divider" src="https://www.figma.com/api/mcp/asset/8780fb60-1fa5-4e31-aa21-97cdb018e594" alt="" aria-hidden="true" />
+              <hr class="publication-divider" aria-hidden="true" />
               <span class="publication-link-row">
                 <span>czytaj więcej</span>
                 <span aria-hidden="true">→</span>
